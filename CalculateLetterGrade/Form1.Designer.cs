@@ -87,11 +87,14 @@
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(308, 128);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCalculate);
@@ -100,6 +103,7 @@
             this.Controls.Add(this.lblLetter);
             this.Controls.Add(this.lblNumber);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculate Letter Grade";
             this.ResumeLayout(false);
             this.PerformLayout();
