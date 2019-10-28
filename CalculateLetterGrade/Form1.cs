@@ -16,5 +16,10 @@ namespace CalculateLetterGrade
         {
             InitializeComponent();
         }
+
+        private void BtnCalculate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
