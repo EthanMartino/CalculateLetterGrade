@@ -63,7 +63,11 @@ namespace CalculateLetterGrade
         /// <returns></returns>
         private string Calculate(decimal grade)
         {
-            if (grade >= 90)
+            if (grade >= 100)
+            {
+                return "A+";
+            }
+            else if (grade >= 90)
             {
                 return "A";
             }
